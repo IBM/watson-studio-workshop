@@ -1,8 +1,8 @@
 # Site settings
-title: Watson Studio Workshop -- Predicting Home Value 
+title: Watson Workshop 
 description: >-
   In this workshop, we will walk through creating a machine learning model using SKLearn and deploy with IBM Watson Machine Learning while utilizing IBM Watson Stuio.
-baseurl: "/watson-studio-workshop" # the subpath of your site, e.g. /blog
+baseurl: "/workshops" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: samuelcouch
 github_username:  samuelcouch
@@ -21,6 +21,9 @@ collections:
   housing-price-predictor:
     output: true
     permalink: /housing-price-predictor/:path:output_ext
+  demos:
+    output: true
+    permalink: /demos/:path:output_ext
 
 defaults:
   - scope:
@@ -28,3 +31,9 @@ defaults:
       type: "housing-price-predictor"
     values:
       layout: index
+  - scope:
+      path: ""
+      type: "demos"
+    values:
+      layout: index
+
