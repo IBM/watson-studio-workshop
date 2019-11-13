@@ -1,0 +1,38 @@
+# Site settings
+title: Watson Studio Workshop -- Predicting Home Value 
+description: >-
+  In this workshop, we will walk through creating a machine learning model using SKLearn and deploy with IBM Watson Machine Learning while utilizing IBM Watson Stuio.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: samuelcouch
+github_username:  samuelcouch
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Authors
+authors:
+  - name: Sam Couch
+    twitter: samuelcouch
+    github: samuelcouch
+
+collections:
+  # object_detection:
+  #   output: true
+  #   permalink: /object-detection/:path:output_ext
+  workshop:
+    output: true
+    permalink: /workshop/:path:output_ext
+
+defaults:
+  # - scope:
+  #     path: ""
+  #     type: "object_detection"
+  #   values:
+  #     layout: index
+  - scope:
+      path: ""
+      type: "workshop"
+    values:
+      layout: index
